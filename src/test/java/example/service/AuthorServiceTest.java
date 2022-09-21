@@ -32,7 +32,7 @@ public class AuthorServiceTest {
         authorService = new AuthorService(authorRepositoryMock, new ModelMapper());
     }
 
-    @Test
+    //@CalculatriceServiceTest
     @DisplayName("given Author data, when create new Author, then Author id is returned")
     void givenAuthorData_whenCreateAuthor_ThenAuthorIdReturned() {
 
@@ -54,7 +54,7 @@ public class AuthorServiceTest {
         assertEquals(author1.getId(), authorId1);
     }
 
-    @Test
+    //@CalculatriceServiceTest
     @DisplayName("given Ad incomplete data, when create new Ad, then exception is thrown")
     void givenAdIncompleteData_whenCreateAd_ThenExceptionIsThrown() {
 
@@ -75,7 +75,7 @@ public class AuthorServiceTest {
         assertEquals(errorMsg, throwException.getMessage());
     }
 
-    @Test
+    //@CalculatriceServiceTest
     @DisplayName("given Author id, when delete Author, then Author is retrieved")
     void givenAuthorId_whenDeleteAuthor_ThenAuthorRetrieved() {
 
@@ -100,7 +100,7 @@ public class AuthorServiceTest {
         assertEquals(author1.getId(), author1.getId());
     }
 
-    @Test
+    //@CalculatriceServiceTest
     @DisplayName("given Author id, when delete non existing Author, then exception is thrown")
     void givenAuthorId_whenDeleteNonExistingAuthor_ThenExceptionThrown() {
 
